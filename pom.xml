@@ -3,6 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+<<<<<<< HEAD
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -22,6 +23,15 @@
         <module>discovery-server</module>
         <module>api-gateway</module>
     </modules>
+=======
+    <parent>
+        <groupId>com.cytechpro.microservice</groupId>
+        <artifactId>microservices-new</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>product-service</artifactId>
+>>>>>>> dd59f46b018863c793b0e9f19116d1b028a59c03
 
     <properties>
         <maven.compiler.source>22</maven.compiler.source>
@@ -29,6 +39,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+<<<<<<< HEAD
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -70,5 +81,35 @@
             </plugin>
         </plugins>
     </build>
+=======
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+
+
+    </dependencies>
+>>>>>>> dd59f46b018863c793b0e9f19116d1b028a59c03
 
 </project>
